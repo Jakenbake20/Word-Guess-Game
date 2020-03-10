@@ -3,7 +3,7 @@ var guessingGame = alert("Welcome to Coding Karaoke! Press ok to get started.");
 }
 
  //initial array and variables. Global scopes.
-    var game=["Beat it", "Welcome to the Jungle", ""]
+    var game=["Beat it", "Welcome to the Jungle", "Immigrant Song", "Call Me"]
     var choice= Math.floor(Math.random()*4);
     var answer = game[choice];
     var myLength = answer.length;

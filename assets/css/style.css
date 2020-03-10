@@ -4,7 +4,7 @@
     -webkit-text-stroke: 1px white;
     background-image: url(../images/collage.png);
     background-repeat: repeat;
-    background-size: 6cm;
+    background-size: 7cm;
     text-align: center;
     font-family: 'Lobster', cursive;
     font-size: 125px;
@@ -14,10 +14,23 @@
 h2{
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    border: solid white thin;
+    font-family: 'Roboto', sans-serif;
+    border: solid white thick;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 body{
     background-image: url(../images/webb-dark.png);
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    float: left;
+    margin-left: 25%;
+    margin-top: 20px;
+    
+
 }
