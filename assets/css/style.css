@@ -1,7 +1,7 @@
 .jumbotron{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px black;
     background-image: url(../images/MetalGearCollage.jpg);
     background-repeat: repeat;
     background-size: 7cm;
