@@ -1,4 +1,4 @@
-var hangman = {
+var Names = {
     words: [
       "Solid Snake",
       "Liquid Snake",
@@ -39,18 +39,19 @@ var hangman = {
       document.getElementById("word").innerHTML = this.displayWord;
   
       if (!display.includes("_")) {
-        alert("You Win!!! \nThe word was " + this.word);
+        alert("You Win!!! The word was " + this.word);
         this.setRandomWord();
         document.getElementById("wins").innerHTML = this.wins++;
         this.reset();
       }
     },
+    
   
     setRandomWord: function() {
       if (this.word === "") {
         this.word = this.words[Math.floor(Math.random() * this.words.length)];
         this.setDisplayWord();
-        // document.getElementById("letters").innerHTML = this.lettersWrong.join(" ").toUpperCase();
+        document.getElementById("letters").innerHTML = this.lettersWrong.join(" ").toUpperCase();
         document.getElementById("guesses").innerHTML = this.guesses;
         document.getElementById("wins").innerHTML = this.wins;
       }
@@ -80,21 +81,23 @@ var hangman = {
   
     reset: function() {
       this.word = "";
-      this.guesses = 15;
+      this.guesses = 10;
       this.lettersWrong = [];
       this.lettersCorrect = [" ", "-", "'"];
       this.setRandomWord();
     }
   };
   
-  hangman.setRandomWord();
+  Names.setRandomWord();
   
   document.onkeyup = function(event) {
-    hangman.guessLetter(event.key.toUpperCase());
+    Names.guessLetter(event.key.toUpperCase());
     console.log(event.key.toUpperCase());
   };
   
-// alert("Welcome to Coding Karaoke! Press ok to get started.");{
+//Below is my old code I originally started with Couldn't get it to work so I started over. It was also paired with old HTML which I also completely changed. 
+
+// alert("Welcome to Coding Word Guessing! Press ok to get started.");{
 //     console.log("alert here");
 // }
 
