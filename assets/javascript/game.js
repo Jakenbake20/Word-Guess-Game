@@ -1,3 +1,7 @@
+alert("Guess that Metal Gear character name! Press Ok to begin!");{
+    console.log("alert here");
+};
+
 var Names = {
     words: [
       "Solid Snake",
@@ -36,7 +40,7 @@ var Names = {
         }
       }
       this.displayWord = display.join(" ");
-      document.getElementById("word").innerHTML = this.displayWord;
+    //   document.getElementById("word").innerHTML = this.displayWord;
   
       if (!display.includes("_")) {
         alert("You Win!!! The word was " + this.word);
@@ -51,9 +55,9 @@ var Names = {
       if (this.word === "") {
         this.word = this.words[Math.floor(Math.random() * this.words.length)];
         this.setDisplayWord();
-        document.getElementById("letters").innerHTML = this.lettersWrong.join(" ").toUpperCase();
-        document.getElementById("guesses").innerHTML = this.guesses;
-        document.getElementById("wins").innerHTML = this.wins;
+        // document.getElementById("letters").innerHTML = this.lettersWrong.join(" ").toUpperCase();
+        // document.getElementById("guesses").innerHTML = this.guesses;
+        // document.getElementById("wins").innerHTML = this.wins;
       }
     },
   
