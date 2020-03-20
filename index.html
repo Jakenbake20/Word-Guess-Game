@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Word Guess</title>
     <script src= "assets/javascript/game.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href= "assets/css/style.css">
@@ -13,24 +13,40 @@
 </head>
 
 <body>
-    <h1 class="jumbotron">
-        CODING KARAOKE!!
-    </h1>
-    <h2>
-        You have 10 tries to guess the name of the song!
-    </h2>
-    
-    <p>
-        Number of wins
-    </p>
-    <p>
-        Guesses
-    </p>
-
-
-
-
-
-    
-</body>
+    <div class="container mx-auto p-0">
+      <div class="container-fluid card mt-5 text-center header">
+        <h1 class="jumbotron">
+          Metal Gear Solid Names!
+        </h1>
+      </div>
+      <div class="container game-container">
+        <div class="row">
+          <div class="col-6 text-center">
+            <img class="game-img mt-3" src="assets/images/cov19.jpg" alt="" />
+          </div>
+          <div class="col-6 text-center card game">
+            <h3>Press a key to get started!!</h3>
+            <div class="wins">
+              <h3>Wins</h3>
+              <h5 id="wins">0</h5>
+            </div>
+            <div class="currentWord">
+              <h3>Current Name</h3>
+              <h5 id="word" class="word">
+                &nbsp;
+              </h5>
+            </div>
+            <div class="numberOfGuesses">
+              <h3>Number of guesses remaining</h3>
+              <h5 id="guesses">10</h5>
+            </div>
+            <div class="lettersGuessed">
+              <h3>Letters already guessed</h3>
+              <h5 id="letters">&nbsp;</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

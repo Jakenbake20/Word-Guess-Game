@@ -2,15 +2,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px white;
-    background-image: url(../images/collage.png);
+    background-image: url(../images/MetalGearCollage.jpg);
     background-repeat: repeat;
     background-size: 7cm;
     text-align: center;
     font-family: 'Lobster', cursive;
-    font-size: 125px;
+    font-size: 100px;
     font-weight: bold;
+    
 
 }
+
+/* div {
+    background-color: blue;
+} */
+
 h2{
     text-align: center;
     color: white;
@@ -20,7 +26,7 @@ h2{
     margin-right: 25%;
 }
 
-body{
+body {
     background-image: url(../images/webb-dark.png);
 }
 
@@ -33,4 +39,8 @@ p{
     margin-top: 20px;
     
 
+}
+
+p.message {
+    float: left;
 }
